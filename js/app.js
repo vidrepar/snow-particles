@@ -17,7 +17,7 @@ var app = {
         var $canvas = $('#snow-canvas');
 
         app.stage = new createjs.Stage($canvas[0]);
-        
+
     },
     setupTicker:function () {
 
@@ -38,7 +38,10 @@ var app = {
 
         while(app.NUM_PARTICLES--){
 
-            var snow = new Snow();
+            var snow = new Snow(app.stage);
+
+            snow.particle.x = Math.random()*1000;
+            snow.particle.y = Math.random()*1000;
 
             app.particleArray.push(snow);
 
