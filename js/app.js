@@ -1,6 +1,6 @@
 var app = {
 
-    NUM_PARTICLES:100,
+    NUM_PARTICLES:200,
 
     particleArray:[],
     stage:null,
@@ -40,8 +40,8 @@ var app = {
 
             var snow = new Snow(app.stage);
 
-            snow.particle.x = Math.random()*1000;
-            snow.particle.y = Math.random()*1000;
+            snow.particle.x = Math.random()*1200;
+            snow.particle.y = Math.random()*500;
 
             app.particleArray.push(snow);
 
